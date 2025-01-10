@@ -1,6 +1,6 @@
 # XeroLinux Welcome
 
-This is a welcome app for the XeroLinux Ditro. It features:
+This is a welcome app for the XeroLinux Distro. It features:
 
 - Showing XeroLinux Social Links
 - Running the Calamares installer
@@ -22,3 +22,7 @@ makepkg -f
 cd build/
 sudo pacman -U ./xero-welcome*
 ```
+
+### Credits
+
+This tool was created by the [**ParchLinux**](https://parchlinux.com/en) team. I take absolutely no credit for that. They just allowed me to modify and use it for my own needs. That's the beauty of **FOSS**. You can find original source-code >> [**Here**](https://git.parchlinux.com/applications/parch-welcome/-/tree/main?ref_type=heads).
