@@ -5,11 +5,11 @@ pkgver=2.0.0
 pkgrel=1
 pkgdesc="XeroLinux Welcome App"
 arch=('x86_64')
-url="https://github.com/XeroLinuxDev/xero-welcome"
+url="https://github.com/XeroLinuxDev"
 license=('GPL-3')
 depends=('gcc-libs')
 makedepends=('git' 'rustup')
-source=("$pkgname::git+$url#branch=main")
+source=("$pkgname::git+$url/${pkgname}")
 md5sums=('SKIP')
 
 build() {
