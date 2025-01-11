@@ -16,6 +16,11 @@ This program is still on beta stages and it is semi complete and ready to use.
 sudo pacman -S --noconfirm git rustup
 ```
 
+- Initialize Rust:
+```shell
+rustup default nightly
+```
+
 - For building this package run:
 ```shell
 cd build/
