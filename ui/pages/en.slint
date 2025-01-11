@@ -1,4 +1,4 @@
-import { Button, VerticalBox, HorizontalBox, GridBox } from "std-widgets.slint";
+import { Button, StandardButton, VerticalBox, HorizontalBox, GridBox } from "std-widgets.slint";
 import { Globals } from "globals.slint";
 export component EnglishApp {
     VerticalLayout {
@@ -6,7 +6,7 @@ export component EnglishApp {
             padding-left: 30px;
             padding-right: 30px;
             padding-top: 10px;
-            height: 80px;
+            height: 40px;
             width: 100%;
             alignment: space-between;
             Rectangle {
@@ -34,7 +34,6 @@ export component EnglishApp {
                     }
 
                     clicked => {
-                        Globals.switchTheme();
                     }
                 }
             }
@@ -60,25 +59,20 @@ export component EnglishApp {
                     alignment: center;
                     Image {
                         image-fit: fill;
-                        width: 100.52px;
+                        width: 166px;
                         height: 166px;
                         source: @image-url("assets/logo.png");
                     }
                 }
-
-                Image {
-                    height: 80px;
-                    source: @image-url("assets/parchlinux-en.png");
-                }
             }
         }
-
         VerticalLayout {
             HorizontalBox {
+                alignment: center;
                 Image {
-                    colorize: Globals.themeStatus;
-                    source: @image-url("assets/parchlinuxtext-en.png");
-                    height: 40px;
+                    source: @image-url("assets/xerotext.png");
+                    width: 512px;
+                    height: 100px;
                 }
             }
 
@@ -87,7 +81,7 @@ export component EnglishApp {
                 Text {
                     color: Globals.themeStatus;
                     horizontal-alignment: center;
-                    text: "We will be glad if you support us!";
+                    text: "You Support Would Be Highly Appreciated!";
                     font-size: 20px;
                     font-family: "Vazirmatn";
                     font-weight: 900;
@@ -108,7 +102,7 @@ export component EnglishApp {
                         }
 
                         clicked => {
-                            Globals.openUrl("https://github.com/parchlinux");
+                            Globals.openUrl("https://github.com/xerolinuxdev");
                         }
                     }
 
@@ -122,23 +116,10 @@ export component EnglishApp {
                         }
 
                         clicked => {
-                            Globals.openUrl("https://twitter.com/bssfoss");
+                            Globals.openUrl("https://x.com/XeroLinuxOP");
                         }
                     }
 
-                    TouchArea {
-                        Image {
-
-                            colorize: Globals.themeStatus;
-                            width: 30px;
-                            height: 30px;
-                            source: @image-url("assets/telegram.png");
-                        }
-
-                        clicked => {
-                            Globals.openUrl("https://t.me/parchlinux");
-                        }
-                    }
 
                     TouchArea {
                         Image {
@@ -150,7 +131,7 @@ export component EnglishApp {
                         }
 
                         clicked => {
-                            Globals.openUrl("https://discord.gg/9RW5cRByAM");
+                            Globals.openUrl("https://discord.gg/5sqxTSuKZu");
                         }
                     }
 
@@ -164,7 +145,7 @@ export component EnglishApp {
                         }
 
                         clicked => {
-                            Globals.openUrl("https://mas.to/@bssfoss");
+                            Globals.openUrl("https://fosstodon.org/@XeroLinux");
                         }
                     }
 
@@ -178,13 +159,12 @@ export component EnglishApp {
                         }
 
                         clicked => {
-                            Globals.openUrl("https://daramet.com/parchlinux");
+                            Globals.openUrl("https://ko-fi.com/XeroLinux");
                         }
                     }
 
                     TouchArea {
                         Image {
-
                             colorize: Globals.themeStatus;
                             width: 30px;
                             height: 30px;
@@ -192,13 +172,12 @@ export component EnglishApp {
                         }
 
                         clicked => {
-                            Globals.openUrl("https://parchlinux.com");
+                            Globals.openUrl("https://xerolinux.xyz");
                         }
                     }
 
                     TouchArea {
                         Image {
-
                             colorize: Globals.themeStatus;
                             width: 30px;
                             height: 30px;
@@ -206,7 +185,7 @@ export component EnglishApp {
                         }
 
                         clicked => {
-                            Globals.openUrl("https://wiki.parchlinux.com");
+                            Globals.openUrl("https:/wiki.xerolinux.xyz");
                         }
                     }
                 }
@@ -219,7 +198,7 @@ export component EnglishApp {
 
                     color: Globals.themeStatus;
                     height: 25px;
-                    text: "Hit the button below to install Parch on your computer";
+                    text: "Hit the button below to install Xero Linux on your computer";
                     font-size: 16px;
                     font-family: "Vazirmatn";
                     horizontal-alignment: center;
@@ -234,15 +213,15 @@ export component EnglishApp {
                         Globals.startInstaller();
                     }
                     Rectangle {
-                        width: 144px;
+                        width: 170px;
                         height: 42px;
-                        background: Globals.currentTheme ? white : Globals.primaryDark;
+                        background: Globals.currentTheme ? white : Globals.textDark;
                         animate background, drop-shadow-color, drop-shadow-blur {
                             duration: 275ms;
                             easing: ease-in-out;
                         }
                         border-radius: 8px;
-                        drop-shadow-color: Globals.currentTheme ? #d9d9d9 : #404040;
+                        drop-shadow-color: Globals.currentTheme ? #404040 : #404040;
                         drop-shadow-blur: 12px;
                         drop-shadow-offset-x: 2px;
                         drop-shadow-offset-y: 2px;
@@ -250,15 +229,15 @@ export component EnglishApp {
                             alignment: center;
 
                             Image {
-                                colorize: Globals.currentTheme ? transparent : white;
+                                //colorize: Globals.currentTheme ? transparent : white;
                                 image-fit: fill;
                                 source: @image-url("assets/inbox.png");
                             }
 
                             Text {
-                                text: "Install Parch";
+                                text: "Install Xero Linux";
                                 font-family: "Vazirmatn";
-                                color: Globals.currentTheme ? #0D40BF : Colors.white;
+                                //color: Globals.primaryDark
                                 font-size: 16px;
                                 font-weight: 900;
                             }
@@ -283,10 +262,10 @@ export component EnglishApp {
                         Text {
                             vertical-alignment: center;
                             horizontal-alignment: right;
-                            text: "English";
+                            text: "This tool was originally developed by Parch Linux Team";
                             font-family: "Vazirmatn";
                             font-weight: 900;
-                            font-size: 16px;
+                            font-size: 10px;
                             color: Globals.themeStatus;
                         }
                     }
