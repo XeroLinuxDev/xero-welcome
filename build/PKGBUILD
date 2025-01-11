@@ -13,6 +13,9 @@ source=("$pkgname::git+$url/${pkgname}")
 md5sums=('SKIP')
 
 build() {
+
+  rustup default || rustup default nightly
+
   cd "$srcdir/$pkgname"
   cargo build --release
 }
