@@ -11,6 +11,11 @@ This program is still on beta stages and it is semi complete and ready to use.
 
 ## Build the package on Arch machines
 
+- Install dpendencies:
+```shell
+sudo pacman -S --noconfirm git rustup
+```
+
 - For building this package run:
 ```shell
 cd build/
