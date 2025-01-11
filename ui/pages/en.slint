@@ -68,7 +68,7 @@ export component EnglishApp {
 
                 Image {
                     height: 80px;
-                    source: @image-url("assets/xerolinux-en.png");
+                    source: @image-url("assets/parchlinux-en.png");
                 }
             }
         }
@@ -77,7 +77,7 @@ export component EnglishApp {
             HorizontalBox {
                 Image {
                     colorize: Globals.themeStatus;
-                    source: @image-url("assets/xerolinuxtext-en.png");
+                    source: @image-url("assets/parchlinuxtext-en.png");
                     height: 40px;
                 }
             }
@@ -271,7 +271,6 @@ export component EnglishApp {
                 alignment: start;
                 TouchArea {
                     clicked => {
-                        Globals.changeLang();
                     }
                     HorizontalBox {
                         padding-left: 30px;

@@ -1,7 +1,7 @@
 import { Button, VerticalBox, HorizontalBox, GridBox } from "std-widgets.slint";
 import "pages/assets/vazirmatn.ttf";
 import "pages/assets/Inter-Regular.ttf";
-import {EnglishApp,PersianApp} from "pages/pages.slint";
+import {EnglishApp} from "pages/pages.slint";
 import { Globals } from "pages/globals.slint";
 
 // ReExport for Native access
@@ -21,7 +21,6 @@ export component App inherits Window {
         }
         VerticalLayout {
             if Globals.isEnglishPage: EnglishApp { }
-            if !Globals.isEnglishPage: PersianApp { }
         }
     }
 }
