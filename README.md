@@ -2,9 +2,10 @@
 
 This is a welcome app for the XeroLinux Distro. It features:
 
-- Showing XeroLinux Social Links
 - Running the Calamares installer
-- Updating XeroLinux repositories
+- Showing XeroLinux Social Links
+- Updating the system (post-install)
+- Launch the XeroLinux Toolkit (post-install)
 
 This program is still on beta stages and it is semi complete and ready to use.
 
