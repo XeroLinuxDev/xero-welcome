@@ -1,11 +1,11 @@
 # Maintainer: ParchLinux
 
-pkgname=parch-welcome
+pkgname=xero-welcome
 pkgver=2.0.0
 pkgrel=1
 pkgdesc="Welcome application for Parch Linux"
 arch=('x86_64')
-url="https://github.com/parchlinux/parch-welcome"
+url="https://github.com/XeroLinuxDev/xero-welcome"
 license=('GPL-3')
 depends=('gcc-libs')
 makedepends=('git' 'rust')
