@@ -8,6 +8,9 @@ build = "build.rs"
 [dependencies]
 open = "5.1.2"
 slint = "1.4"
+qttypes = "0.3.0"  # or the latest version that supports Qt6
+cpp = "0.6.0"
+cpp_build = "0.6.0"
 
 [build-dependencies]
 slint-build = "1.4"

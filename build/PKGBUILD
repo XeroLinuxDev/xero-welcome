@@ -1,7 +1,7 @@
 # Maintainer: ParchLinux
 
 pkgname=xero-welcome
-pkgver=2.0.0
+pkgver=1.0
 pkgrel=1
 pkgdesc="XeroLinux Welcome App"
 arch=('x86_64')
@@ -14,9 +14,8 @@ md5sums=('SKIP')
 
 build() {
 
-  rustup default || rustup default nightly
-
   cd "$srcdir/$pkgname"
+
   cargo build --release
 }
 
